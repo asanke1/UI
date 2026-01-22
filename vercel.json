@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/production/index.html"
+        },
+        {
+            "source": "/(login|landing|index.*)",
+            "destination": "/production/$1.html"
+        }
+    ],
+    "cleanUrls": true,
+    "framework": "vite"
+}
